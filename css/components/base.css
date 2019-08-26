@@ -1,0 +1,114 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-weight: 400;
+  color:#444;
+  line-height: 23px;
+  font-family: 'Brandon Grotesque Black', 'Brandon Grotesque Light', 'Tw Cen MT';
+}
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.container, .container-header {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+p, ul, ol, figure {
+  margin: 0 0 50px 0;
+}
+
+* + p, * + ul, * + ol , * + figure {
+  margin-top: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 0.67em 0;
+}
+
+* + h1, * + h2, * + h3, * + h4, * + h5, * + h6 {
+  margin-top: 0.67em;
+}
+
+a, .link {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover, .link:hover {
+  text-decoration: underline;
+  color: #00D053;
+}
+
+img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: auto;
+}
+
+.logo {
+  display: inline-block;
+  font-family: "Tw Cen MT";
+  font-size: 30px;
+  line-height: 33px;
+  color: #00D053;
+}
+
+.cover-image {
+  display: none;
+  background-color: rgba(52, 60, 74, 0.6);
+  -webkit-transition-duration: 0.7s;
+       -o-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+  position: absolute;
+}
+
+@media (min-width: 640px) {
+  .container, .container-header {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: 960px) {
+  .container, .container-header {
+    padding: 0 45px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 960px;
+    padding: 0;
+  }
+  .container-header {
+    max-width: 1120px;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container-header {
+    max-width: 1300px;
+    padding: 0;
+  }
+
+  .container {
+    max-width: 1120px;
+    padding: 0;
+  }
+}

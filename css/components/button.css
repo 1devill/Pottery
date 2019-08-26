@@ -1,0 +1,114 @@
+.button {
+  padding: 14px 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1rem;
+  border: 2px solid #00D053;
+  color: #fff;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #00D053;
+  -webkit-transition-duration: 0.4s;
+       -o-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.button:hover {
+  text-decoration: none;
+  color: #00D053;  
+  background-color: #fff;
+}
+
+.button-secondary {
+  background-color: #fff;
+  color: #00D053;
+}
+.button-secondary:hover {
+  background-color: #00D053;  
+  color: #fff;
+}
+
+.button-block {
+  width: 100%;
+}
+
+.button-burger {
+  background-color: #fff;
+  position: relative;
+  border-radius: 5px;
+  width: 35px;
+  height: 30px;
+  display: block;
+  -webkit-transition-duration: .7s;
+       -o-transition-duration: .7s;
+          transition-duration: .7s;
+}
+
+.button-burger .button-text,
+.button-burger .button-text::before,
+.button-burger .button-text::after {
+  position: absolute;
+  height: 2px;
+  width: 16px;
+  background-color: #00D053;
+  top: 50%;
+  left: 50%;
+  margin-top: -1px;
+  margin-left: -8px;
+  -webkit-transition-duration: .7s;
+       -o-transition-duration: .7s;
+          transition-duration: .7s;
+  border-radius: 1px;
+}
+
+.button-burger .button-text::before, 
+.button-burger .button-text::after {
+  content: "";
+}
+
+.button-burger .button-text::before {
+  -webkit-transform: translateY(-8px);
+      -ms-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+
+.button-burger .button-text::after {
+  -webkit-transform: translateY(8px);
+      -ms-transform: translateY(8px);
+          transform: translateY(8px);
+}
+
+.button-burger.is-active {
+  border-radius: 50%;
+  background-color: #00D053;
+}
+
+.button-burger.is-active .button-text {
+  background-color: transparent;
+}
+.button-burger.is-active .button-text::before {
+  -webkit-transform: rotate(-40deg);
+      -ms-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+  background-color: #fff;
+}
+.button-burger.is-active .button-text::after {
+  -webkit-transform: rotate(40deg);
+      -ms-transform: rotate(40deg);
+          transform: rotate(40deg);
+  background-color: #fff;
+}
+
+@media (min-width: 1200px) {
+  .button-burger {
+    display: none;
+  }
+}

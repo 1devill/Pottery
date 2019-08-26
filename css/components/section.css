@@ -1,0 +1,397 @@
+.section {
+  position: relative;
+  padding: 120px 0;
+}
+
+.section-title {
+  font-size: 50px;
+  line-height: 71px;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 20px;
+  line-height: 29px;
+  text-align: center;
+  color: #333333;
+}
+
+.section-description {
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  color: #444444;
+  margin-bottom: 50px;
+  margin-top: 0;
+  font-family: "Brandon Grotesque Light";
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -2;
+}
+
+.section-background img{
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(255, 000, 000, 0.4);
+  z-index: -1;
+}
+
+.section-foreground {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/****************************************** Section 1 Techniques ***************************************************/
+.section-techniques .my-slides {
+  width: 100%;
+  min-height: 200px;
+}
+
+.section-techniques .my-slides:not(:nth-child(2)) {
+  display: none;
+}
+
+.section-techniques .section-subtitle {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.section-techniques .slide-toggle {
+  width: 100%;
+  cursor:pointer;
+  border-radius: 5px;
+}
+
+@media (min-width: 640px) {
+  .section-techniques .my-slides {
+    min-height: 350px;
+  }
+}
+
+@media (min-width: 960px) {
+  .section-techniques .my-slides {
+    min-height: 520px;
+  }
+}
+
+@media (min-width: 1440px){
+  .section-techniques .slider-content {
+    max-width: 922px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/****************************************** Section 2 Story *******************************************************/
+.section-story {
+  background-color: #f8f8f8;
+}
+.section-story .swiper-pagination {
+  position: initial;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 25px 0;
+}
+
+.section-story .swiper-pagination::before {
+  content: "";
+  border-bottom: 1px solid #00D053;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.section-story .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #00D053;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.section-story .swiper-pagination-text {
+  font-size: 20px;
+  line-height: 29px;
+  text-align: center;
+  color: #000000;
+}
+
+.section-story .swiper-pagination-bullet-active {
+  position: relative;
+}
+
+.section-story .swiper-pagination-bullet-active::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 201, 33, 0.2);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-25px, -25px);
+      -ms-transform: translate(-25px, -25px);
+          transform: translate(-25px, -25px);
+}
+
+.section-story .swiper-wrapper {
+  margin-top: 44px;
+}
+
+.section-story .swiper-slide {
+  padding: 20px;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  color: #333333;
+}
+
+@media (min-width: 768px) {
+  .section-story .swiper-slide {
+    padding: 58px 38px;
+  }
+
+  .section-story .section-wrapper {
+    max-width: 520px;
+  }
+}
+
+/****************************************** Section 3 Gallery *******************************************************/
+.section-gallery {
+  padding-bottom: 0;
+}
+
+.section-gallery .section-image {
+  margin-bottom: 0;
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.section-gallery .section-image img {
+  display: block;
+  -webkit-transition-duration: 0.7s;
+       -o-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+
+.section-gallery .grid {
+  margin: 0;
+}
+
+.section-gallery .grid-item {
+  padding: 0;
+}
+
+.section-gallery .section-image:hover .cover-image{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; 
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.section-gallery .section-image:hover img {
+  -webkit-transform: scale(1.2) rotate(10deg);
+      -ms-transform: scale(1.2) rotate(10deg);
+          transform: scale(1.2) rotate(10deg);
+}
+
+.section-gallery .icon-search {
+  font-size: 23px;
+  color: #fff;
+  padding: 20px;
+  background-color: #00D053;
+  border-radius: 50%;
+}
+
+/****************************************** Section 4 Plans *******************************************************/
+.section-plans {
+  background-color: #e5e5e5;
+}
+
+.section-plans .card-subtitle span {
+  font-size: 50px;
+  line-height: 71px;
+}
+
+.section-plans .card-subtitle sup {
+  vertical-align: top;
+}
+
+.section-plans .card {
+  background-color: #e5e5e5;
+  margin-top: 10px;
+}
+
+.section-plans .card.bg-w {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 4px 28px rgba(6, 6, 90, 0.06);
+          box-shadow: 0px 4px 28px rgba(6, 6, 90, 0.06);
+  border-radius: 5px;
+}
+
+@media (min-width: 1440px) {
+  .section-plans .card {
+    padding: 46px 38px;
+    margin-top: 0;
+  }
+}
+/****************************************** Section 5 Reviews *******************************************************/
+.section-reviews {
+  background-color: #f8f8f8;
+}
+
+.section-reviews .card {
+  background-color: #fff;
+  margin-top: 15px;
+}
+
+.section-reviews .card-image {
+  max-width: 50px;
+  max-height: 50px;
+  margin: 0 auto;
+}
+
+.section-reviews .card-image img {
+  border-radius: 50%;
+}
+
+.section-reviews .card-title {
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 14px;
+  margin-bottom: 0;
+}
+
+.section-reviews .card-subtitle {
+  font-family: "Brandon Grotesque Light";
+  font-size: 14px;
+  line-height: 139.2%;
+  color: #828282;
+}
+
+.section-reviews .time {
+  font-size: 12px;
+  line-height: 139.2%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #B4B4B4;
+  display: block;
+  margin: 20px auto 0;
+}
+
+.section-reviews .icon-group {
+  text-align: center;
+  margin: 7px 0;
+}
+
+.section-reviews .swiper-container {
+  padding-bottom: 40px;
+}
+
+.section-reviews .swiper-pagination {
+  bottom: 0 !important;
+}
+
+.section-reviews .section-desktop {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .section-reviews .section-desktop {
+    display: block;
+  }
+  
+  .section-reviews .section-mobile {
+    display: none;
+  }
+}
+/****************************************** Section 6 Contacts *******************************************************/
+.section-contacts .grid {
+  margin: 0 -15px;
+}
+
+.section-contacts .grid-item {
+  padding: 0 15px;
+}
+
+.section-contacts .section-title {
+  margin-bottom: 50px;
+}
+
+.section-contacts .map {
+  width: 100%;
+}
+
+.section-contacts .section-subtitle {
+  font-size: 28px;
+  line-height: 40px;
+  text-align: left;
+}
+
+.section-contacts .list {
+  width: 80%;
+}
+
+.section-contacts .list-item {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-size: 18px;
+  line-height: 26px;
+  
+  color: #000000;
+}
+
+.section-contacts i {
+  margin-right: 16px;
+}
+/****************************************** Footer *******************************************************/

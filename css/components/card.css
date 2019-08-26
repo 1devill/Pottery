@@ -1,0 +1,35 @@
+.card {
+  position: relative;
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 28px;
+  line-height: 40px;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 24px;
+}
+
+.card-subtitle {
+  font-size: 20px;
+  line-height: 29px;
+  text-align: center;
+  color: #333333;
+}
+
+.card-description {
+  font-size: 16px;
+  line-height: 139.2%;
+  text-align: center;
+  color: #333333;
+  font-family: "Brandon Grotesque Light";
+}
+
+.card-cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}

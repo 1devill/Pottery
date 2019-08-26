@@ -1,0 +1,41 @@
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 18px;
+  margin-bottom: 38px;
+}
+
+.list-item {
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #343C4A;
+  font-family: "Brandon Grotesque Light";
+  margin-bottom: 15px;
+}
+
+.list-item:last-child {
+  margin-bottom: 0;
+}
+
+.list-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px -20px 0;
+}
+
+.list-social > * {
+  padding: 0 20px;
+}
+
+.list-social a:hover {
+  text-decoration: none;
+}
+
+.list-social a:hover i::before {
+  color: #00D053;
+}
